@@ -1,0 +1,268 @@
+// document.getElementById('send-it').onclick = function () {
+//   console.log('hit-my');
+// };
+var coroverWrapper = document.createElement('div');
+coroverWrapper.id = 'cor_wrapper';
+document.body.appendChild(coroverWrapper);
+var coroverCss = document.createElement('link');
+coroverCss.href =
+  'https://cdn.jsdelivr.net/gh/corover/assets-cdn@latest/stylecor.css';
+coroverCss.type = 'text/css';
+coroverCss.rel = 'stylesheet';
+coroverCss.media = 'screen,print';
+
+document.getElementsByTagName('head')[0].appendChild(coroverCss);
+
+var chatbtcr =
+  '' +
+  '  <div class="corover-bot">' +
+  '      <div id="whatsapp-chat" class="hide">' +
+  '        <div class="header-chat">' +
+  '          <div class="head-home">' +
+  '            <div class="info-avatar">' +
+  '              <img' +
+  '                src="https://uiresource.ap-south-1.linodeobjects.com/justAspire.png"' +
+  '              />' +
+  '            </div>' +
+  '            <p>' +
+  '              <span class="whatsapp-name">Just Aspire</span><br /><small' +
+  '                >Typically replies within 1 min</small' +
+  '              >' +
+  '            </p>' +
+  '          </div>' +
+  '          <div class="get-new hide">' +
+  '            <div id="get-label"></div>' +
+  '            <div id="get-nama"></div>' +
+  '          </div>' +
+  '        </div>' +
+  '        <div class="home-chat"></div>' +
+  '        <div class="start-chat">' +
+  '          <div' +
+  '            pattern="https://elfsight.com/assets/chats/patterns/whatsapp.png"' +
+  '            class="WhatsappChat__Component-sc-1wqac52-0 whatsapp-chat-body"' +
+  '          >' +
+  '            <div class="WhatsappChat__MessageContainer-sc-1wqac52-1 dAbFpq">' +
+  '              <div' +
+  '                style="opacity: 0"' +
+  '                class="WhatsappDots__Component-pks5bf-0 eJJEeC"' +
+  '              >' +
+  '                <div class="WhatsappDots__ComponentInner-pks5bf-1 hFENyl">' +
+  '                  <div' +
+  '                    class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotOne-pks5bf-3 ixsrax"' +
+  '                  ></div>' +
+  '                  <div' +
+  '                    class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotTwo-pks5bf-4 dRvxoz"' +
+  '                  ></div>' +
+  '                  <div' +
+  '                    class="WhatsappDots__Dot-pks5bf-2 WhatsappDots__DotThree-pks5bf-5 kXBtNt"' +
+  '                  ></div>' +
+  '                </div>' +
+  '              </div>' +
+  '              <div' +
+  '                style="opacity: 1"' +
+  '                class="WhatsappChat__Message-sc-1wqac52-4 kAZgZq"' +
+  '              >' +
+  '                <div class="WhatsappChat__Author-sc-1wqac52-3 bMIBDo">' +
+  '                  Just Aspire' +
+  '                </div>' +
+  '                <div class="WhatsappChat__Text-sc-1wqac52-2 iSpIQi">' +
+  '                  Hi, want to know more about Ajai Chowdhry?<b' +
+  '                    ><br />' +
+  '                    1. <span id="send-it-list">Ask him a question </span>' +
+  '                    <br />' +
+  '                    2. <span id="send-it-list">Read \'Just Aspire\'</span>' +
+  '                    <br />' +
+  '                    3. <span id="send-it-list">Follow on Instagram</span>' +
+  '                  </b>' +
+  '                </div>' +
+  '                <div id="cqCDVm" class="WhatsappChat__Time-sc-1wqac52-5 cqCDVm">' +
+  '                  1:40' +
+  '                </div>' +
+  '              </div>' +
+  '            </div>' +
+  '          </div>' +
+  '' +
+  '          <div class="blanter-msg">' +
+  '            <input id="chat-input" placeholder="Write your query" type="text" />' +
+  '            <a id="send-it"' +
+  '              ><svg viewBox="0 0 448 448" id="send-it">' +
+  '                <path' +
+  '                  d="M.213 32L0 181.333 320 224 0 266.667.213 416 448 224z"' +
+  '                /></svg' +
+  '            ></a>' +
+  '          </div>' +
+  '          <div style="margin: 7px; text-align: center; font-size: 12px">' +
+  '            <div' +
+  '              _ngcontent-fiw-c0=""' +
+  '              class="poweredBySec"' +
+  '              style="' +
+  '                border-top-color: rgb(238, 238, 238);' +
+  '                background: #f2f2f2;' +
+  '                font-size: 16px;' +
+  '              "' +
+  '            >' +
+  '              <span _ngcontent-fiw-c0=""' +
+  '                ><span' +
+  '                  _ngcontent-fiw-c0=""' +
+  '                  style="color: #77777a; font-size: 13px; font-weight: 500"' +
+  '                  >Powered by </span' +
+  '                ><a' +
+  '                  _ngcontent-fiw-c0=""' +
+  '                  _ngcontent-c3=""' +
+  '                  href="https://corover.ai/"' +
+  '                  style="text-decoration: none"' +
+  '                  target="_blank"' +
+  '                  title="CoRover® Pvt. Ltd."' +
+  '                  ><img' +
+  '                    _ngcontent-fiw-c0=""' +
+  '                    _ngcontent-c3=""' +
+  '                    alt=""' +
+  '                    src="https://uiresource.ap-south-1.linodeobjects.com/corover-v245/images/logo-white.png"' +
+  '                    style="width: 60px; margin-top: -9px"' +
+  '                  /><sup' +
+  '                    _ngcontent-fiw-c0=""' +
+  '                    _ngcontent-c3=""' +
+  '                    style="color: #e05b19"' +
+  '                    >®</sup' +
+  '                  ></a' +
+  '                ></span' +
+  '              >' +
+  '            </div>' +
+  '          </div>' +
+  '        </div>' +
+  '        <div id="get-number"></div>' +
+  '        <a class="close-chat" href="javascript:void">×</a>' +
+  '      </div>' +
+  '      <a class="blantershow-chat" href="javascript:void" title="Show Chat"' +
+  '        ><svg width="20" viewBox="0 0 24 24">' +
+  '          <defs />' +
+  '          <path' +
+  '            fill="#eceff1"' +
+  '            d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z"' +
+  '          />' +
+  '          <path' +
+  '            fill="#4caf50"' +
+  '            d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z"' +
+  '          />' +
+  '          <path' +
+  '            fill="#fafafa"' +
+  '            d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"' +
+  '          />' +
+  '        </svg>' +
+  '        Chat with Us</a' +
+  '      >' +
+  '    </div>' +
+  '';
+
+// window.onload = function () {
+//   alert('Hello!'); // it will not work!!!
+// };
+
+document.getElementById('cor_wrapper').innerHTML = chatbtcr;
+
+// document.open();
+// document.write(chatbtcr);
+// document.close();
+// document.getElementsByTagName('body')[0].innerHTML(chatbtcr);
+
+document.addEventListener('click', function (event) {
+  if (event.target.id === 'send-it-list') {
+    event.preventDefault();
+    // console.log('hit-1');
+    var a = document.getElementById('chat-input');
+    // innerText
+    // console.log('do:', a.value);
+    // if (a.value !== '') {
+    var b = document.getElementById('get-number').textContent,
+      d = 'https://web.whatsapp.com/send',
+      e = b,
+      f = '&text=' + event.target.innerText;
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent,
+      )
+    ) {
+      d = 'whatsapp://send';
+    }
+    var g = d + '?phone=+91 81306 95587' + e + f;
+    window.open(g, '_blank');
+    // }
+  }
+  // Handling the click event for '#send-it' element
+  if (event.target.id === 'send-it') {
+    event.preventDefault();
+    // console.log('hit-1');
+    var a = document.getElementById('chat-input');
+    // console.log('do:', a.value);
+    if (a.value !== '') {
+      var b = document.getElementById('get-number').textContent,
+        c = document.getElementById('chat-input').value,
+        d = 'https://web.whatsapp.com/send',
+        e = b,
+        f = '&text=' + c;
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent,
+        )
+      ) {
+        d = 'whatsapp://send';
+      }
+      var g = d + '?phone=+91 81306 95587' + e + f;
+      window.open(g, '_blank');
+    }
+  }
+
+  // Handling the click event for '.informasi' element
+  if (event.target.classList.contains('informasi')) {
+    var getNumberElement = document.getElementById('get-number');
+    var myNumberElement = event.target.querySelector('.my-number');
+    getNumberElement.innerHTML = myNumberElement.textContent;
+
+    var startChatElement = document.querySelector('.start-chat');
+    var getNewElement = document.querySelector('.get-new');
+    var homeChatElement = document.querySelector('.home-chat');
+    var headHomeElement = document.querySelector('.head-home');
+
+    startChatElement.classList.add('show');
+    startChatElement.classList.remove('hide');
+    getNewElement.classList.add('show');
+    getNewElement.classList.remove('hide');
+    homeChatElement.classList.add('hide');
+    homeChatElement.classList.remove('show');
+    headHomeElement.classList.add('hide');
+    headHomeElement.classList.remove('show');
+
+    var getNamaElement = event.target.querySelector('.info-chat .chat-nama');
+    var getLabelElement = event.target.querySelector('.info-chat .chat-label');
+    document.getElementById('get-nama').innerHTML = getNamaElement.textContent;
+    document.getElementById('get-label').innerHTML =
+      getLabelElement.textContent;
+  }
+
+  // Handling the click event for '.close-chat' element
+  if (event.target.classList.contains('close-chat')) {
+    var whatsappChatElement = document.getElementById('whatsapp-chat');
+    whatsappChatElement.classList.add('hide');
+    whatsappChatElement.classList.remove('show');
+  }
+
+  // Handling the click event for '.blantershow-chat' element
+  if (event.target.classList.contains('blantershow-chat')) {
+    var whatsappChatElement = document.getElementById('whatsapp-chat');
+    whatsappChatElement.classList.add('show');
+    whatsappChatElement.classList.remove('hide');
+  }
+});
+function formatAMPM(date) {
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var ampm = hours >= 12 ? 'PM' : 'AM';
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  var strTime = hours + ':' + minutes + ' ' + ampm;
+  return strTime;
+}
+document.getElementById('cqCDVm').innerHTML = formatAMPM(new Date());
+
+// console.log(formatAMPM(new Date()));
